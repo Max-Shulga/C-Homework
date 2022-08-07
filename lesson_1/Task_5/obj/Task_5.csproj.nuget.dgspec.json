@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Studies\\main\\С#\\HomeWork1\\Task_5\\Task_5.csproj": {}
+    "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_5\\Task_5.csproj": {}
   },
   "projects": {
-    "E:\\Studies\\main\\С#\\HomeWork1\\Task_5\\Task_5.csproj": {
+    "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_5\\Task_5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Studies\\main\\С#\\HomeWork1\\Task_5\\Task_5.csproj",
+        "projectUniqueName": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_5\\Task_5.csproj",
         "projectName": "Task_5",
-        "projectPath": "E:\\Studies\\main\\С#\\HomeWork1\\Task_5\\Task_5.csproj",
+        "projectPath": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_5\\Task_5.csproj",
         "packagesPath": "C:\\Users\\Макс\\.nuget\\packages\\",
-        "outputPath": "E:\\Studies\\main\\С#\\HomeWork1\\Task_5\\obj\\",
+        "outputPath": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_5\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Макс\\AppData\\Roaming\\NuGet\\NuGet.Config"

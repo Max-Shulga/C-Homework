@@ -1,6 +1,6 @@
 ﻿Console.Clear();
 
-Console.WriteLine("Input randomt hree-digit number");
+Console.Write("Input random three-digit number: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 while(num > 100)

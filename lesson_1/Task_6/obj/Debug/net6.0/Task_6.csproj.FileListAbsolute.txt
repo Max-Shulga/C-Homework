@@ -1,0 +1,15 @@
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\bin\Debug\net6.0\Task_6.exe
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\bin\Debug\net6.0\Task_6.deps.json
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\bin\Debug\net6.0\Task_6.runtimeconfig.json
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\bin\Debug\net6.0\Task_6.dll
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\bin\Debug\net6.0\Task_6.pdb
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.csproj.AssemblyReference.cache
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.GeneratedMSBuildEditorConfig.editorconfig
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.AssemblyInfoInputs.cache
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.AssemblyInfo.cs
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.csproj.CoreCompileInputs.cache
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.dll
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\refint\Task_6.dll
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.pdb
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\Task_6.genruntimeconfig.cache
+E:\Studies\main\С#\HomeWork\lesson_1\Task_6\obj\Debug\net6.0\ref\Task_6.dll

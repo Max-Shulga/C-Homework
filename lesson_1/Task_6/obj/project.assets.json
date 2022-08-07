@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Studies\\main\\С#\\HomeWork1\\Task_6\\Task_6.csproj",
+      "projectUniqueName": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_6\\Task_6.csproj",
       "projectName": "Task_6",
-      "projectPath": "E:\\Studies\\main\\С#\\HomeWork1\\Task_6\\Task_6.csproj",
+      "projectPath": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_6\\Task_6.csproj",
       "packagesPath": "C:\\Users\\Макс\\.nuget\\packages\\",
-      "outputPath": "E:\\Studies\\main\\С#\\HomeWork1\\Task_6\\obj\\",
+      "outputPath": "E:\\Studies\\main\\С#\\HomeWork\\lesson_1\\Task_6\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Макс\\AppData\\Roaming\\NuGet\\NuGet.Config"
