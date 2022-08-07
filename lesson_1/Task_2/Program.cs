@@ -1,4 +1,5 @@
-﻿Console.Clear();
+﻿//Можно было бы обойтись двум блоками if, если бы Вы изначально присвоили переменной maxNum значение любого из чисел.
+Console.Clear();
 
 Console.Write("Input first number: ");
 int numA = Convert.ToInt32(Console.ReadLine());
