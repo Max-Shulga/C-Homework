@@ -14,3 +14,7 @@ while(num >= 10)
 }
 //int lastDigit = num % 10;
 Console.Write(num);
+
+// Console.WriteLine("enter the number");
+//  int num = Convert.ToInt32(Console.ReadLine());
+// Console.Write("result " + Math.Abs(num));

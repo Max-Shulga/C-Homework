@@ -16,6 +16,6 @@ Console.Write("There are no even numbers in this segment");
 while(EvenNum <= numA)
      {
         Console.Write(EvenNum + " ");
-        EvenNum = EvenNum + 2;
+        EvenNum += 2;
      }
     

@@ -14,6 +14,12 @@ if(num < 0)
     
 }
 
+// while (num2 <= num)
+// {
+//     Console.Write(num2 + " ");
+//     num2++; 
+// }
+
 while(num >= num2)
 {
     Console.Write(-num + " ");
