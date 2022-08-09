@@ -17,3 +17,9 @@ while(Math.Abs(num1) < 100 || Math.Abs(num1) >= 1000)
 
 int num2 = num1/10;
 Console.Write($"The second digit of the number is :{Math.Abs(num1 = num2%10)}");
+
+// Or like this:
+
+// String str = Console.ReadLine();
+// char[] ch = str.ToCharArray();
+// Console.Write(ch[1]); 
