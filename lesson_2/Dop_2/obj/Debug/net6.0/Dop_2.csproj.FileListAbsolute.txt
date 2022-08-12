@@ -1,0 +1,15 @@
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\bin\Debug\net6.0\Dop_2.exe
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\bin\Debug\net6.0\Dop_2.deps.json
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\bin\Debug\net6.0\Dop_2.runtimeconfig.json
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\bin\Debug\net6.0\Dop_2.dll
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\bin\Debug\net6.0\Dop_2.pdb
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.csproj.AssemblyReference.cache
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.AssemblyInfoInputs.cache
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.AssemblyInfo.cs
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.csproj.CoreCompileInputs.cache
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.dll
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\refint\Dop_2.dll
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.pdb
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\Dop_2.genruntimeconfig.cache
+E:\Studies\main\С#\HomeWork\lesson_2\Dop_2\obj\Debug\net6.0\ref\Dop_2.dll

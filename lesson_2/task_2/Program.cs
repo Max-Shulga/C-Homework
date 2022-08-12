@@ -15,9 +15,10 @@ if(Math.Abs(num) < 100)
 
 else
 {
-    while(Math.Abs(num) > 1000)
+    while(Math.Abs(num) >= 1000)
     {
         num = num/10;
     }
-    Console.Write(Math.Abs(num = num%10));
+    Console.Write(Math.Abs(num%10));
 }
+
