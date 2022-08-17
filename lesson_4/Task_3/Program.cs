@@ -5,6 +5,8 @@
 //Незакоментированный код будет генерировать  массив из заданого количество элементов, так интереснее вроде бы,
 //  а то задание один в один как на семенари, второе же решение по условию на всякий случай.
 
+//самое последнее решение на случай, если вдруг неверно понял условие
+
 Console.Clear();
 Random num = new Random();
 
@@ -29,4 +31,14 @@ for(int i = 0; i < length; i++)
 // {
 //     array[i] = num.Next(-20,20);
 //     Console.Write(array[i] + " ");
+// }
+
+
+
+// Console.Clear();
+// Console.Write("Input the input numbers by the coma: ");
+// string[] array = {Convert.ToString(Console.ReadLine()!)};
+// for(int i = 0; i < array.Length; i++)
+// {
+//     Console.Write(array[i]+ " ");
 // }
