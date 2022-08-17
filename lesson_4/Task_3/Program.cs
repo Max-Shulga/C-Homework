@@ -36,7 +36,7 @@ for(int i = 0; i < length; i++)
 
 
 // Console.Clear();
-// Console.Write("Input the input numbers by the coma: ");
+// Console.Write("Input the numbers by the coma: ");
 // string[] array = {Convert.ToString(Console.ReadLine()!)};
 // for(int i = 0; i < array.Length; i++)
 // {
