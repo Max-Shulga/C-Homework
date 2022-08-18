@@ -5,6 +5,13 @@ Console.Clear();
 Console.WriteLine("Input first number: ");
 double numA = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Input second number: ");
+double result = 1;
+
 double numB = Convert.ToDouble(Console.ReadLine());
 
-Console.Write($"The {numA} raised to a degree of the {numB} equel:{Math.Round(Math.Pow(numA, numB), 3)}");
+for (int i = 0; i < numB; i++)
+{
+    result = result * numA;
+}
+Console.Write($"The {numA} raised to a degree of the {numB} equel: {result}");
+// Console.Write($"The {numA} raised to a degree of the {numB} equel:{Math.Round(Math.Pow(numA, numB), 3)}");
