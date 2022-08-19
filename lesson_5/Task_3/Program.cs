@@ -47,4 +47,5 @@ for (int i = 0; i < length; i++)
         FindMin = array[i];
     }
 }
-Console.Write($"[{String.Join(", ", array)}]--> Max number in array is: {FindMax}. Min number in array is: {FindMin}");
+Console.WriteLine($"[{String.Join(", ", array)}]--> Max number in array is: {FindMax}. Min number in array is: {FindMin}");
+Console.WriteLine($"Difference between maximum and minimum value is: {FindMax-FindMin}");
