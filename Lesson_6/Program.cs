@@ -84,7 +84,7 @@ if(TaskNum == 41)
 // Не знаю, может это и костыли, может тут можно было и на много проще но мне очень понравилось пытаться сделать именно так ;)
 
 //------------------------------------------------------------------------------------------
-if(TaskNum == 43)
+else if(TaskNum == 43)
 {
     Console.Clear();
     Console.WriteLine("Input b1 : ");
@@ -101,10 +101,10 @@ if(TaskNum == 43)
     Console.Write($"{(x, y)})");
 }
 //------------------------------------------------------------------------------------------
-if(TaskNum == 42)
+else if(TaskNum == 42)
     {
     Console.Clear();
-    Console.Write("Введите число: "); 
+    Console.Write("Input number: "); 
     int num = int.Parse(Console.ReadLine()!);
     string Binary = "";
     while(num != 0)
@@ -119,14 +119,14 @@ if(TaskNum == 42)
         }
         num = num/2;
     }
-
+    Console.Write($"Your number{num} in binar system: ");
     for (int i = 0; i < Binary.Length; i++)
         {
          Console.Write(Binary[Binary.Length-1 - i]);
         }
 }
 //------------------------------------------------------------------------------------------
-if(TaskNum == 44)
+else if(TaskNum == 44)
 {
     Console.Clear();
     int length = CorrectLengthInput("Input array length: ");
@@ -143,7 +143,7 @@ if(TaskNum == 44)
 
 }
 //------------------------------------------------------------------------------------------
-if(TaskNum == 45)
+else if(TaskNum == 45)
 {
     Console.Clear();
     int length = CorrectLengthInput("Input array length: ");
