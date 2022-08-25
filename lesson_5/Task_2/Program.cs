@@ -31,8 +31,8 @@ int CorrectLengthInput(string text = "")
 int length = CorrectLengthInput("Input array length: ");
 int[] array = CreateInputRandomArray(length);
 int sum = 0;
-for (int i = 0; i < length; i += 2) //не совсем понятно что считать нечетными позициями, по идее нулевой  индекс массива является первым,
-{                                   // т.е, занимает нечетную позицию в массиве. Если я не прав то i = 1 задать в цикле for 
+for (int i = 1; i < length; i += 2) 
+{                                    
     sum += array[i];
 }
 Console.Write($"[{String.Join(", ", array)}] sum of elements in odd positions is {sum}");

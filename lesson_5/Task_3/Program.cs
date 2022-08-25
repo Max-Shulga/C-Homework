@@ -13,7 +13,6 @@ int[] CreateInputRandomArray(int length)
         array[i] = new Random().Next(start,end+1); 
     }
     return array;
-    
 } 
 int CorrectLengthInput(string text = "")
 {

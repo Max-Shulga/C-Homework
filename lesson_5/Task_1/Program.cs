@@ -26,7 +26,7 @@ int CorrectLengthInput(string text = "")
 //------------------------------------------------------------------------------------------------
 Console.Clear();
 int length =  CorrectLengthInput("Input array length: ");
-int[] array = CreateRandomArray(length, 99, 999);
+int[] array = CreateRandomArray(length, 100, 999);
 
 int count = 0;
 for (int i = 0; i < length; i++)
