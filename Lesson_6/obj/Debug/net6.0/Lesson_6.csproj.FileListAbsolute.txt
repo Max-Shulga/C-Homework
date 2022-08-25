@@ -1,0 +1,15 @@
+E:\Studies\main\С#\HomeWork\Lesson_6\bin\Debug\net6.0\Lesson_6.exe
+E:\Studies\main\С#\HomeWork\Lesson_6\bin\Debug\net6.0\Lesson_6.deps.json
+E:\Studies\main\С#\HomeWork\Lesson_6\bin\Debug\net6.0\Lesson_6.runtimeconfig.json
+E:\Studies\main\С#\HomeWork\Lesson_6\bin\Debug\net6.0\Lesson_6.dll
+E:\Studies\main\С#\HomeWork\Lesson_6\bin\Debug\net6.0\Lesson_6.pdb
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.csproj.AssemblyReference.cache
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.GeneratedMSBuildEditorConfig.editorconfig
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.AssemblyInfoInputs.cache
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.AssemblyInfo.cs
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.csproj.CoreCompileInputs.cache
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.dll
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\refint\Lesson_6.dll
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.pdb
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\Lesson_6.genruntimeconfig.cache
+E:\Studies\main\С#\HomeWork\Lesson_6\obj\Debug\net6.0\ref\Lesson_6.dll
