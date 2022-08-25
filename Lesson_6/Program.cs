@@ -142,10 +142,6 @@ if(TaskNum == 44)
 
 
 }
-else
-{
-    Console.Write($"No task with this number: {TaskNum}");
-}
 //------------------------------------------------------------------------------------------
 if(TaskNum == 45)
 {
@@ -160,4 +156,8 @@ if(TaskNum == 45)
     Console.Write($"Your array: [{String.Join(", ", OriginalArray  )}]\n Copy array: [{String.Join(", ", CopyArray)}]");
 }
 
+else
+{
+    Console.Write($"No task with this number: {TaskNum}");
+}
 //!!!Экспериментальный формат сдачи, если очень не удобно напишите в коментариях к дз, и я буду делать как обычно.Спасибо!!!
