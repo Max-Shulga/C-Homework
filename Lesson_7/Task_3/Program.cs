@@ -5,22 +5,9 @@
 // 8 4 2 4
 // Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
 
-int GetRow()
+int GetDigitCondition(string message)
 {
-    Console.Write("Input number of rows for Multidimensional Arrays: ");
-    int row = int.Parse(Console.ReadLine()!);
-    while(row < 1)
-    {
-        Console.Write("Invalid digit, please enter the correct digit: ");
-        int temp = int.Parse(Console.ReadLine()!);
-        row = temp;
-    }
-    return row;
-}
-//не нашел как и вообще можно ли через return вернуть 2 и более значений
-int GetColum()
-{
-    Console.Write("Input number of colums for Multidimensional Arrays: ");
+    Console.WriteLine(message);
     int colum = int.Parse(Console.ReadLine()!);
     while(colum < 1)
     {
@@ -31,18 +18,11 @@ int GetColum()
     return colum;
 }
 
-int GetStartNum()
+int GetDigit(string message)
 {
-    Console.Write("Input numerical start of range: ");
+    Console.WriteLine(message);
     int start = int.Parse(Console.ReadLine()!);
     return start;
-}
-
-int GetEndNum()
-{
-    Console.Write("Input numerical end of range: ");
-    int end = int.Parse(Console.ReadLine()!);
-    return end;
 }
 
 int[,] CreateMulti(int row, int colum, int minNum, int MaxNum)
@@ -85,6 +65,8 @@ void AverageInColum(int [,] multi)
     }
 }
 
-int[,] matrix = CreateMulti(GetRow(),GetColum(),GetStartNum(),GetEndNum());
+int[,] matrix = CreateMulti(GetDigitCondition("Input number of row for Multidimensional Arrays:  "),
+GetDigitCondition("Input number of colums for Multidimensional Arrays: "),
+GetDigit("Input numerical start of range: "),GetDigit("Input numerical end of range: "));
 PrintMulti(matrix);
 AverageInColum(matrix);
