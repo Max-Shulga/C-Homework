@@ -33,8 +33,7 @@ double [,] CreateMultiDouble(int row, int colum, int minNum, int MaxNum)
         for (int j = 0; j < multi.GetLength(1); j++)
         {
             Random digit = new Random();
-            double number = digit.NextDouble()*(MaxNum - minNum) + minNum;
-            multi[i,j] = number;
+            multi[i,j] = digit.NextDouble()*(MaxNum - minNum) + minNum;
         }
     
     }

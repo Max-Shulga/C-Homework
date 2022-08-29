@@ -34,8 +34,7 @@ double [,] CreateMultiDouble(int minNum, int MaxNum)
         for (int j = 0; j < multi.GetLength(1); j++)
         {
             Random digit = new Random();
-            double number = digit.NextDouble()*(MaxNum - minNum) + minNum;
-            multi[i,j] = number;
+            multi[i,j] = digit.NextDouble()*(MaxNum - minNum) + minNum;
         }
     
     }
@@ -65,7 +64,7 @@ void FindValue(double [,] multi, int row, int colum)
 {
     try
     {
-        Console.WriteLine($"cell [{row}], [{colum}] contains the value: {multi[row,colum]}");
+        Console.WriteLine($"cell [{row}], [{colum}] contains the value: {multi[row,colum]:2f}");
     }
     catch
     {
@@ -84,7 +83,7 @@ void FindValueClassic(double [,] multi, int row, int colum)
     }
     else
     {
-       Console.WriteLine($"cell [{row}], [{colum}] contains the value: {multi[row,colum]}");
+       Console.WriteLine($"cell [{row}], [{colum}] contains the value: {multi[row,colum]:2f}");
     }
     result = multi[row,colum];
 }
