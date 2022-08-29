@@ -7,7 +7,7 @@
 Console.Clear();
 int GetDigitCondition(string message)
 {
-    Console.Write(message);
+    Console.WriteLine(message);
     int colum = int.Parse(Console.ReadLine()!);
     while(colum < 1)
     {
@@ -20,7 +20,7 @@ int GetDigitCondition(string message)
 
 int GetDigit(string message)
 {
-    Console.Write(message);
+    Console.WriteLine(message);
     int start = int.Parse(Console.ReadLine()!);
     return start;
 }

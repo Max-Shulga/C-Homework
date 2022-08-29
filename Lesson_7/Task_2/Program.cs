@@ -6,24 +6,9 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-Console.Clear();
-
-int GetRow()
+int GetDigitCondition(string message)
 {
-    Console.Write("Input the value of the row to search in the array: ");
-    int row = int.Parse(Console.ReadLine()!);
-    while(row < 0)
-    {
-        Console.Write("Invalid digit, please enter the correct digit: ");
-        int temp = int.Parse(Console.ReadLine()!);
-        row = temp;
-    }
-    return row;
-}
-//не нашел как и вообще можно ли через return вернуть 2 и более значений
-int GetColum()
-{
-    Console.Write("Input the value of the colum to search in the array: ");
+    Console.WriteLine(message);
     int colum = int.Parse(Console.ReadLine()!);
     while(colum < 0)
     {
@@ -34,18 +19,11 @@ int GetColum()
     return colum;
 }
 
-int GetStartNum()
+int GetDigit(string message)
 {
-    Console.Write("Input numerical start of range: ");
+    Console.WriteLine(message);
     int start = int.Parse(Console.ReadLine()!);
     return start;
-}
-
-int GetEndNum()
-{
-    Console.Write("Input numerical end of range: : ");
-    int end = int.Parse(Console.ReadLine()!);
-    return end;
 }
 
 double [,] CreateMultiDouble(int minNum, int MaxNum)
@@ -95,6 +73,8 @@ void FindValue(double [,] multi, int row, int colum)
     }
 }
 
+//мне прям очень понравилось верхнее решение, но на всякий и нижнее оставлю тут
+
 void FindValueClassic(double [,] multi, int row, int colum)
 {    
     double result = -1;
@@ -111,7 +91,8 @@ void FindValueClassic(double [,] multi, int row, int colum)
 
 //------------------------------------------------------------------------------------------------
 
-double[,] matrix = CreateMultiDouble(GetStartNum(),GetEndNum());
+Console.Clear();
+double[,] matrix = CreateMultiDouble(GetDigit("Input numerical start of range: : "),GetDigit("Input numerical end of range: : "));
 PrintMultiDouble(matrix);
-FindValue(matrix, GetRow(), GetColum());
-FindValueClassic(matrix, GetRow(), GetColum());
+FindValue(matrix, GetDigitCondition("Input the value of the row to search in the array: "), GetDigitCondition("Input the value of the colum to search in the array: "));
+FindValueClassic(matrix, GetDigitCondition("Input the value of the row to search in the array: "), GetDigitCondition("Input the value of the colum to search in the array: "));
