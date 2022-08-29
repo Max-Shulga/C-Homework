@@ -5,22 +5,9 @@
 // 8 7,8 -7,1 9
 
 Console.Clear();
-int GetRow()
+int GetDigitCondition(string message)
 {
-    Console.Write("Input number of rows for Multidimensional Arrays: ");
-    int row = int.Parse(Console.ReadLine()!);
-    while(row < 1)
-    {
-        Console.Write("Invalid digit, please enter the correct digit: ");
-        int temp = int.Parse(Console.ReadLine()!);
-        row = temp;
-    }
-    return row;
-}
-//не нашел как и вообще можно ли через return вернуть 2 и более значений
-int GetColum()
-{
-    Console.Write("Input number of colums for Multidimensional Arrays: ");
+    Console.Write(message);
     int colum = int.Parse(Console.ReadLine()!);
     while(colum < 1)
     {
@@ -31,18 +18,11 @@ int GetColum()
     return colum;
 }
 
-int GetStartNum()
+int GetDigit(string message)
 {
-    Console.Write("Input numerical start of range: ");
+    Console.Write(message);
     int start = int.Parse(Console.ReadLine()!);
     return start;
-}
-
-int GetEndNum()
-{
-    Console.Write("Input numerical end of range: ");
-    int end = int.Parse(Console.ReadLine()!);
-    return end;
 }
 
 double [,] CreateMultiDouble(int row, int colum, int minNum, int MaxNum)
@@ -52,17 +32,11 @@ double [,] CreateMultiDouble(int row, int colum, int minNum, int MaxNum)
     {
         for (int j = 0; j < multi.GetLength(1); j++)
         {
-            Random num = new Random();
-            Random num2 = new Random();
-            double digit = Convert.ToDouble(num.Next(minNum, MaxNum+1))*5;
-            double NumDel = num2.Next(1,5); // тут вариантов для вычисленя очень много, но все какие то костыли(
-            digit = digit / num2.Next(1,9);
-            while(Math.Abs(digit) > MaxNum)
-            {
-                digit /= 1.9;
-            }
-            multi[i,j] = digit;
+            Random digit = new Random();
+            double number = digit.NextDouble()*(MaxNum - minNum) + minNum;
+            multi[i,j] = number;
         }
+    
     }
     return multi;
 }
@@ -88,5 +62,7 @@ void PrintMultiDouble (double [,] multi)
 
 //----------------------------------------------------------------------------------------
 
-double [,] multi = CreateMultiDouble(GetRow(), GetColum(), GetStartNum(), GetEndNum());
+double [,] multi = CreateMultiDouble(GetDigitCondition("Input number of rows for Multidimensional Arrays: "),
+GetDigitCondition("Input number of colums for Multidimensional Arrays: "),GetDigit("Input numerical start of range: "), 
+GetDigit("Input numerical end of range: "));
 PrintMultiDouble(multi);

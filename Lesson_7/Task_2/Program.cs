@@ -55,17 +55,11 @@ double [,] CreateMultiDouble(int minNum, int MaxNum)
     {
         for (int j = 0; j < multi.GetLength(1); j++)
         {
-            Random num = new Random();
-            Random num2 = new Random();
-            double digit = Convert.ToDouble(num.Next(minNum, MaxNum+1))*5;
-            double NumDel = num2.Next(1,5); // тут вариантов для вычисленя очень много, но все какие то костыли(
-            digit = digit / num2.Next(1,9);
-            while(Math.Abs(digit) > MaxNum)
-            {
-                digit /= 1.9;
-            }
-            multi[i,j] = digit;
+            Random digit = new Random();
+            double number = digit.NextDouble()*(MaxNum - minNum) + minNum;
+            multi[i,j] = number;
         }
+    
     }
     return multi;
 }
