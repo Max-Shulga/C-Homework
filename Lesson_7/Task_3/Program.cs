@@ -54,19 +54,19 @@ void PrintMulti (int [,] multi)
 void AverageInColum(int [,] multi)
 {
     double sum = 0;
-    for (int i = 0; i < multi.GetLength(0); i++)
+    for (int i = 0; i < multi.GetLength(1); i++)                           //перебор стобцов
     {
-        for (int j = 0; j < multi.GetLength(1); j++)
+        for (int j = 0; j < multi.GetLength(0); j++)                       //строк
         {
-            sum += multi[j,i]; 
+            sum += multi[j,i];                                            // считает сумму значений в стобце
         }
-    Console.WriteLine($"in {i+1} colum average is: {sum/multi.GetLength(1)}");
+    Console.WriteLine($" in {i+1} colum average is: {sum/multi.GetLength(0)}");      //делим на количество строк
     sum = 0;
     }
 }
 
 int[,] matrix = CreateMulti(GetDigitCondition("Input number of row for Multidimensional Arrays:  "),
-GetDigitCondition("Input number of colums for Multidimensional Arrays: "),
-GetDigit("Input numerical start of range: "),GetDigit("Input numerical end of range: "));
+GetDigitCondition("\nInput number of colums for Multidimensional Arrays: "),
+GetDigit("\nInput numerical start of range: "),GetDigit("\nInput numerical end of range: "));
 PrintMulti(matrix);
 AverageInColum(matrix);
