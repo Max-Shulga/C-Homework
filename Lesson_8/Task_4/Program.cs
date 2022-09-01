@@ -64,5 +64,5 @@ void PrintMulti (int [,,] matrix) //вывод 2 мерного массива �
 
 //---------------------------------------------------------------------------------------------------
 Console.Clear();
-int[,,] multiplex = CreateMulti(2,2,2);
+int[,,] multiplex = CreateMulti(3,3,3);
 PrintMulti(multiplex);

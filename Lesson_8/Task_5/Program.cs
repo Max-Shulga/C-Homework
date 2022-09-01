@@ -5,45 +5,70 @@
 // 11 16 15 06
 // 10 09 08 07
 
-//Задание вроде сделано, но оооооочень плохо, я на досуге посежу постараюсь как 
-// нибудь через рекурсию красиво, но пока ничего не получается прикреплю в Task_5.5 то на чем в ней остановился.
-int[,] CreateMulti() //Создания двумерного массива
-{
-    int[,] multi = new int[4, 4];
-    int number = 1;
-    for (int i = 0; i < multi.GetLength(0); i++)
-    {
-        multi[0, i] = number;
-        number++;
-    }
-    for (int i = 1; i < multi.GetLength(1); i++)
-    {
-        multi[i, 3] = number;
-        number++;
-    }
-    for (int i = 2; i >= 0; i--)
-    {
-        multi[3, i] = number;
-        number++;
-    }
-    for (int i = 2; i > 0; i--)
-    {
-        multi[i, 0] = number;
-        number++;
-    }
+//Странное задание, какие то кастыли красиво не выходит, и как то гугл ничего изящнее не предлагает
 
-    
-    for (int i = 1; i < 3; i++)
+int GetDigit(string message) // Запрос числа без условия
+{
+    Console.WriteLine(message);
+    int number = int.Parse(Console.ReadLine()!);
+    return number;
+}
+
+int GetDigitCondition (int number, string sign, int numb) //Запрос числа с условием
+{
+    int Check(int number)
     {
-        multi[1, i] = number;
-        number++;
+        Console.Write("Invalid digit, please enter the correct digit: ");
+        number =  int.Parse(Console.ReadLine()!);
+        return number;
     }
-    for (int i = 2; i > 0; i--)
+    switch(sign)
     {
-        multi[2, i] = number;
-        number++;
+        case "==": while(number != numb) number = Check(number); break;
+        case "!=": while(number == numb) number = Check(number); break;
+        case ">=": while(number <= numb) number = Check(number); break;
+        case "<=": while(number >= numb) number = Check(number); break;
+        case ">": while(number < numb) number = Check(number); break;
+        case "<": while(number > numb) number = Check(number); break;
+        default : Console.Write("Invalid equals sign"); break;
     }
-    return multi;
+    return number;
+}
+
+int[,] CreateSpiral(int size)
+
+{
+    int elements = size * size;
+    int countElement = 0;
+    int begin = 0;
+    int [,] matrix = new int[size,size];
+    while (countElement < elements)
+    {
+        for (int i = begin; i < size; i++)
+        {
+            countElement++;
+            matrix[begin, i] = countElement;
+        }
+        for (int i = begin +1; i < size; i++)
+        {
+            countElement++;
+            matrix[i, size-1] = countElement;
+        }
+        for (int i = size-2; i >= begin; i--)
+        {
+            countElement++;
+            matrix[size -1,i] = countElement;
+        }
+        for (int i = size -2; i >= begin+1; i--)
+        {
+            countElement++;
+            matrix[i,begin] = countElement;
+        }
+        size -= 1;
+        begin += 1;
+
+    }
+    return matrix;
 }
 
 void PrintMulti(int[,] matrix) //вывод 2 мерного массива в консоль
@@ -58,8 +83,7 @@ void PrintMulti(int[,] matrix) //вывод 2 мерного массива в �
     }
 }
 
-//-------------------------------------------------------------------------------------
-Console.Clear();
-
-int[,] matrix = CreateMulti();
+//------------------------------------------------------------------------------
+int size = GetDigitCondition(GetDigit("Input matrix size: "),">", 1);
+int[,] matrix = CreateSpiral(size);
 PrintMulti(matrix);

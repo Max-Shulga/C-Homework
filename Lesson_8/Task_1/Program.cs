@@ -78,8 +78,8 @@ int MaxIndexInRows(int [,] matrix,int columStart, int row) // принимает
     return columIndex;    //после цикла возвращяет значение максимального индекса столбца.
 } 
 
-int[,] SortMulti(int[,] matrix)           //тут вопрос не лучше ли в таких случаях поместить функцию MaxIndexInRows внутрь SortMulti,  
-{                                         //ведь она только для лучшей читаемсости ее содержимое можно было просто перенести.
+int[,] SortMulti(int[,] matrix)          
+{                                
     for (int i = 0; i < matrix.GetLength(0); i++) //строки
     {
         for (int j = 0; j < matrix.GetLength(1); j++)//столбцы
