@@ -1,25 +1,13 @@
-﻿// Задача 68: Напишите программу вычисления функции Аккермана с помощью рекурсии. Даны два неотрицательных числа m и n.
+﻿// Задача 66: Задайте значения M и N. Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
 
-// m = 2, n = 3 -> A(m,n) = 29
+// M = 1; N = 15 -> 120
+// M = 4; N = 8. -> 30
 
-int AckermannFunction(int m, int n)
+int sum = 0;
+int GetSum(int a, int b)
 {
-    if(m==0) return n += 1;
-    else if(m>0 && n == 0) return AckermannFunction(m - 1, 1);
-    else return AckermannFunction(m-1,AckermannFunction(m,n-1));
+    if(a == b) return sum+=a;
+    return sum+=a + GetSum(a+1,b);
 }
 
-Console.Write(AckermannFunction(2,3));
-//Формула Аккермана из википедии но по ней m = 2, n = 3 -> A(m,n) = 29 вот это условие не выполняется. Как и таблице которая прикладывается к формуле.
-//если m = 3, n = 2 то выполняется. Где то наткнулся на
-//вот такую формулу где переменные по обратному вычисляются и там значение получаем из примера. Может это какая то модификация формулы. 
-//Либо как вариант в программировании у нас чуть другая логика вычисления.
-
-// int AckermannFunction(int m, int n)
-// {
-//     if(n==0) return m += 1;
-//     else if(n>0 && m == 0) return AckermannFunction(1,n - 1);
-//     else return AckermannFunction(AckermannFunction(m-1,n),n-1);
-// }
-
-// Console.Write(AckermannFunction(2,3));
+Console.Write(GetSum(4,8));
