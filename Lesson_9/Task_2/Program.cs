@@ -6,8 +6,9 @@
 int sum = 0;
 int GetSum(int a, int b)
 {
-    if(a == b) return sum+=a;
-    return sum+=a + GetSum(a+1,b);
+    if (a == b)
+        return sum += a;
+    return sum += a + GetSum(a + 1, b);
 }
 
-Console.Write(GetSum(4,8));
+Console.Write(GetSum(4, 8));

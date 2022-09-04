@@ -4,10 +4,10 @@
 
 string ShowInterval(int a, int b)
 {
-    if(a == b) return $"{a}.";
-    else return $"{a}, {ShowInterval(a + 1, b)}";
+    if (a == b)
+        return $"{a}.";
+    else
+        return $"{a}, {ShowInterval(a + 1, b)}";
 }
 
-Console.Write(ShowInterval(1,10));
-
-
+Console.Write(ShowInterval(1, 10));
